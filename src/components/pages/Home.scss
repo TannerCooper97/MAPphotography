@@ -1,0 +1,411 @@
+
+/* ///////////////////// */
+/* //Hero Section CSS/// */
+/* ///////////////////// */
+
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    margin-top: -5rem;
+    position: absolute;
+    z-index: -1;
+}
+
+.hero-container{
+    background: none;
+}
+
+/* ///////////////////// */
+/* Greetings Section CSS */
+/* ///////////////////// */
+.greetings-section{
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    padding: 40px;
+    background-color: #ECD59A;
+    height: 100vh;
+    width: 100%;
+}
+
+.greetings-content{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+
+.greetings-content h2 {
+    text-align: center;
+    font-size: 2.50rem;
+    padding: 5px;
+}
+
+.subtitle-home {
+    text-align: center;
+    font-style: light;
+    font-size: 1.25rem;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+
+.paragraph-home {
+    text-align: justify;
+    font-size: 1rem;
+    font-style: medium;
+    padding: 10px;
+}
+
+.greetings-photo{
+    width: 50%;
+    height: 90%;
+    background-image: url("../../images/homeGreetPicture.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 6px 2px rgb(68, 68, 68);
+}
+
+.greet-Btn{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    text-decoration: none;
+}
+
+/* ///////////////////// */
+/* /////Banner CSS //////*/
+/* ///////////////////// */
+    .home-gallery-banner{
+        background: #72151F;
+        color: #ffff;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: 500;
+        text-shadow: 0px 4px 4px rgba(0,0,0, 0.25);
+    }
+
+    .home-packages-banner{
+        background: #CCA64F;
+        color: rgb(0, 0, 0);
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 2rem;
+        font-weight: 500;
+        text-shadow: 1px 3px 4px rgba(0,0,0, 0.25);  
+        .package-subheading{
+            font-size: 1.5rem;
+            text-align: center;
+            font-weight: 400;
+            width: 90%;
+        }
+    }
+
+    /* ///////////////////// */
+    /* //// Packages CSS ////*/
+    /* ///////////////////// */
+    .popular-packages-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    .package-container{
+        background-color: #72151F;
+        border-radius: 5px;
+        width:33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 2rem;
+       
+    }
+
+    .package-item{
+        background-color: #ECD59A;
+        display: flex;
+        height: 85%;
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+        padding-bottom: 3rem;
+        border: 3px solid #CCA64F;
+        border-radius: 5px;
+        
+        h3{
+            margin-top: 20px;
+            font-size: 2rem;
+        }
+
+        p{
+            margin-top: 5px;
+            font-size: 1.5rem; 
+        }
+
+        ul{
+            margin-top: 30px; 
+            list-style-type: disc;
+            line-height: 1.5rem;
+            font-size: 1.25rem;
+            
+        }
+    }
+
+/*///////////////// MEDIA QUERIES ///////////////////*/
+
+@media screen and (max-width: 960px){
+    /* ///////////////////// */
+    /* Greetings Section CSS */
+    /* ///////////////////// */
+    .greetings-section{
+        display: flex;
+        flex-direction: column;
+        height: 200vh;
+    }
+
+    .greetings-content{
+        width: 100%;
+        height: 60%;
+        padding: 0;
+        margin-top: 30px;
+    }
+    
+    .greetings-content h2 {
+        font-size: 2.50rem;
+        padding: 5px;
+
+    }
+    
+    .subtitle-home {
+        font-style: light;
+        font-size: 1.50rem;
+    }
+    
+    .paragraph-home {
+        text-align: justify;
+        font-size: 1.25rem;
+        font-style: medium;
+        padding: 20px;
+    }
+
+    .greetings-photo{
+        width: 100%;
+        height: 100%;
+        background-position: 80% 20%;
+        padding: 0;
+    }
+
+    /* ///////////////////// */
+    /* ///// Banner CSS /////*/
+    /* ///////////////////// */
+    .home-gallery-banner{
+        font-size: 1.75rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .home-packages-banner{
+        font-size: 2rem;
+        .package-subheading{
+            display: none;
+        }
+    }
+
+    /* ///////////////////// */
+    /* //// Packages CSS ////*/
+    /* ///////////////////// */
+    .popular-packages-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .package-container{
+        background-color: #72151F;
+        width:90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 4rem;
+        margin-bottom: 10px;
+        button{
+            font-size: 2.5rem;
+        }
+    }
+
+    .package-item{
+        background-color: #ECD59A;
+        width: 90%;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h3{
+            padding-top: 2rem;
+            padding-bottom: 3rem; 
+            font-size: 3rem; 
+        }
+
+        p{
+            padding-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        ul{
+            padding-bottom: 5rem;
+            li{
+                line-height: 3rem;
+                font-size: 1.5rem;
+                text-align: justify;
+            }
+        }
+    }
+
+
+}
+
+@media screen and (min-width: 961px) and (max-width: 1250px){
+    /* ///////////////////// */
+    /* Greetings Section CSS */
+    /* ///////////////////// */
+    .greetings-content{
+        padding: 50px;
+    }
+
+    .subtitle-home {
+        font-size: 1.25rem;
+    }
+    
+    .paragraph-home {
+        font-size: 1rem;
+    }
+
+
+    /* ///////////////////// */
+    /* //// Packages CSS ////*/
+    /* ///////////////////// */
+        .package-item{
+
+        display: flex;
+        height: 85%;
+        width: 90%;
+        margin-top: 1rem;
+        padding-bottom: 3rem;
+        h3{
+            margin-top: 20px;  
+        }
+
+        p{
+            margin-top: 5px; 
+            font-size:1.25rem;
+        }
+
+        ul{
+            font-size: 1rem;
+            margin-top: 30px; 
+            line-height: 1.5rem;
+            
+        }
+    }
+
+}
+
+@media screen and (min-width: 1600px){
+    /* ///////////////////// */
+    /* Greetings Section CSS */
+    /* ///////////////////// */
+
+    .greetings-section{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .greetings-content{
+        padding: 50px;
+    }
+    
+    .greetings-content h2 {
+        font-size: 3.5rem;
+        padding: 5px;
+    }
+
+    .subtitle-home {
+        font-size: 2rem;
+    }
+    
+    .paragraph-home {
+        font-size: 1.50rem;
+        padding: 40px;
+    }
+
+    /* ///////////////////// */
+    /* /////Banner CSS //////*/
+    /* ///////////////////// */
+    .home-gallery-banner{
+        font-size: 2rem;
+    }
+
+    .home-packages-banner{
+        font-size: 2rem;
+        .package-subheading{
+            font-size: 1.5rem;
+        }
+    }
+
+
+    .package-container{
+        width:33%;
+        display: flex;
+        padding-bottom: .75rem;
+    }
+    
+
+    
+
+    .package-item{
+
+        width: 90%;
+        height: 85%;
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        align-items: center;
+
+        h3{
+            padding-top: 2rem;
+            padding-bottom: 1rem; 
+            font-size: 2.5rem; 
+        }
+
+        p{
+            font-size: 1.5rem;
+        }
+
+        ul{
+            li{
+                line-height: 3rem;
+                font-size: 1.25rem;
+                text-align: justify;
+            }
+        }
+    }
+
+    
+  
+}

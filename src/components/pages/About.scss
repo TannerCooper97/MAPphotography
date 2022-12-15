@@ -1,0 +1,310 @@
+
+/* ///////////////////// */
+/* Greetings Section CSS */
+/* ///////////////////// */
+
+.greetings-about{
+    display: flex; 
+    justify-content: center;
+    background-color: #ECD59A;
+    height: 100vh;
+    width: 100%;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.greetings-content-about{
+   display: flex;
+   flex-direction: column;
+   width: 40%;
+   padding: 1rem;
+}
+
+.greetings-content-about h2 {
+    padding-top: 2rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.subtitle-about {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.paragraph-about {
+    font-size: 1.3rem;
+    text-align: justify;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.about-photo{
+    width: 40%;
+    height: 85%;
+    background-image: url("../../images/about-photo-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    box-shadow: 2px 5px 6px 2px rgb(68, 68, 68);
+}
+
+/* ///////////////////// */
+/* /////Banner CSS //////*/
+/* ///////////////////// */
+.about-banner{
+    background: #72151F;
+    color: #ffff;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.25rem;
+    font-weight: 500;
+    text-shadow: 0px 4px 4px rgba(0,0,0, 0.25);
+}
+
+
+.about-banner-2{
+    text-align: center;
+    background: #CCA64F;
+    color: rgb(0, 0, 0);
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.25rem;
+    font-weight: 500;
+    text-shadow: 1px 3px 4px rgba(0,0,0, 0.25); 
+    padding: 0rem 25rem; 
+}
+
+.about-banner-3{
+    text-align: center;
+    background: #CCA64F;
+    color: rgb(0, 0, 0);
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.25rem;
+    font-weight: 500;
+    text-shadow: 1px 3px 4px rgba(0,0,0, 0.25); 
+    padding: 0rem 20rem; 
+}
+
+/* ///////////////////// */
+/* //// Travel Css //////*/
+/* ///////////////////// */
+.travel-section{
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    background-color: #ECD59A;
+    
+}
+
+.travel-item-container-1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    margin-top: -6%;
+    h5{
+        padding-bottom: 1.5rem;
+    }
+
+    .travel-photo-1{
+        width: 85%;
+        height: 70%;
+        background-image: url("../../images/italy-picture.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        border-radius: 10px;
+        box-shadow: 2px 5px 6px 2px rgb(68, 68, 68);
+    }
+}
+.travel-item-container-2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    h5{
+        padding-bottom: 1.5rem;
+    }
+    
+.travel-photo-2{
+    width: 85%;
+    height: 70%;
+    background-image: url("../../images/greeece.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    box-shadow: 2px 5px 6px 2px rgb(68, 68, 68);
+}
+}
+.travel-item-container-3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    margin-top: 6%;
+    h5{
+        padding-bottom: 1.5rem;
+    }
+    .travel-photo-3{
+        width: 85%;
+        height: 70%;
+        background-image: url("../../images/lake-powell.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        border-radius: 10px;
+        box-shadow: 2px 5px 6px 2px rgb(68, 68, 68);
+    }
+}
+
+.about-container-set1{
+    width: 100%;
+    height: 75vh;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    .boquet-image{
+        width: 35%;
+        height: 100%;
+        margin-right: 1rem;
+        background-image: url("../../images/bouqet-home.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        border-radius: 10px;
+        box-shadow: 2px 5px 6px 2px rgb(68, 68, 68);
+    }
+    
+    .brides-image{
+        width: 75%;
+        height: 100%;
+        margin-left: 1rem;
+        background-image: url("../../images/drinking-brides-below.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        border-radius: 10px;
+        box-shadow: 2px 5px 6px 2px rgb(68, 68, 68);
+    }
+}
+
+.about-container-set2{
+    width: 100%;
+    height: 75vh;
+    padding: 4rem 12rem;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ECD59A;
+    .maternity-set2{
+        width: 50%;
+        height: 100%;
+        margin-right: 1rem;
+        margin-top: -1rem;
+        background-image: url("../../images/maternity-about1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 25%;
+        border-radius: 10px;
+        box-shadow: 2px 5px 6px 2px rgb(68, 68, 68);
+    }
+    
+    .red-bride-set2{
+        width: 50%;
+        height: 100%;
+        margin-left: 1rem;
+        margin-top:  2rem;
+        background-image: url("../../images/about-woman-set2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        border-radius: 10px;
+        box-shadow: 2px 5px 6px 2px rgb(68, 68, 68);
+    }
+}
+
+.about-container-set3{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 4rem 5rem;
+    justify-content: center;
+
+    .wedding-couple-set3{
+        width: 40%;
+        height: 100%;
+        background-image: url("../../images/wedding-couple-set3-about.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 25%;
+        border-radius: 10px;
+        box-shadow: 2px 5px 6px 2px rgb(68, 68, 68);
+    }
+    .about-set3-container{
+        width: 40%;
+        height: 50%;
+        padding: 1rem 2rem;
+    .embrace-image{
+        width: 100%;
+        height: 100%;
+        
+        background-image: url("../../images/man-set3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        border-radius: 10px;
+        box-shadow: 2px 5px 6px 2px rgb(68, 68, 68);
+    }
+
+    .child-set3{
+        width: 100%;
+        height: 100%;
+        margin-top: 2rem;
+        background-image: url("../../images/about-child-set3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        border-radius: 10px;
+        box-shadow: 2px 5px 6px 2px rgb(68, 68, 68);
+    }
+    }
+}
+
+.about-container-set4{
+    width: 100%;
+    height: 75vh;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    background-color: #ECD59A;
+    .wedding-couple-set4{
+        width: 70%;
+        height: 100%;
+        margin-bottom: 1rem;
+        background-image: url("../../images/wedding-set4.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        border-radius: 10px;
+        box-shadow: 2px 5px 6px 2px rgb(68, 68, 68);
+    }
+}

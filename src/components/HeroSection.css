@@ -1,0 +1,49 @@
+
+.hero-container{
+    /* background: url(../images/new-2.jpg) center center/cover no-repeat; */
+
+    /* Change Hero Per Sass File */
+    height: 88vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 10000px rgba(0, 0, 0, 0,2);
+    object-fit: contain;
+}
+
+.hero-container > h1 {
+    color: #fff;
+    font-size: 90px;
+    margin-top: -10rem;
+}
+
+.hero-btns {
+    margin-top: 32px
+}
+
+@media screen and (max-width: 960px){
+    .hero-container > h1 {
+        color: #fff;
+        font-size: 70px;
+        margin-top: -15rem;
+    }  
+}
+
+@media screen and (max-width: 768px){
+    .hero-container > h1 {
+        color: #fff;
+        font-size: 50px;
+        margin-top: -20rem;
+    }  
+
+    .btn-mobile{
+        display: block;
+        text-decoration: none;
+    }
+
+    .btns {
+        width: 100%;
+    }
+}

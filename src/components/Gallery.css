@@ -1,0 +1,15 @@
+.tiled-gallery {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 1400px;
+  }
+
+.tiled-gallery > li {
+    list-style-type: none;
+    
+}
+
+/* .gallery-items{
+
+} */
