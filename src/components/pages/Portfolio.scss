@@ -1,0 +1,46 @@
+.portfolio-contact-hero{
+    height: 100vh;
+    background: url(../../images/new-2.jpg) center center/cover no-repeat;
+    background-position: 50% 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+       font-size: 5rem;
+       color: #ffff; 
+       text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.69);
+       margin-top: -10rem;
+    }
+
+    // .galleryMenu{
+    //     margin-bottom: -10rem;
+    //     margin-top: 15rem;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: space-around;
+    //    ;
+    //     .gallery-btn{
+    //         margin-left: 2rem;
+    //         margin-right: 2rem;
+    //         .btns {
+    //             padding: 0rem;
+    //             Button {
+    //                 padding: .7rem;
+    //             }
+    //         }
+    //     }
+    // }
+}
+
+.weddingSection{
+    background-color: #f8f0e3;
+}
+
+.engagementSection{
+    background-color: #ecd59a;
+}
+
+.maternitySection{
+    background-color: #f8f0e3;
+}

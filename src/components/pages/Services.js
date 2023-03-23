@@ -171,7 +171,7 @@ function Services() {
             </ul>
           </div>
           <div className="button-content-container-left">
-            <p>May be denied depending on location*</p>
+            <p>Location Varies*</p>
             <Link to="/contact" className="btn-mobile greet-Btn">
               <Button
                 className="btns"

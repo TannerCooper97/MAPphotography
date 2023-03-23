@@ -9,15 +9,15 @@ function About() {
   return (
     <div>
       <div className="greetings-about">
-        <div className="greetings-content-about">
+      <div className="greetings-about-container">
           <h2> My Name is Michelle Albair</h2>
           <p className="subtitle-about">So nice to meet you!</p>
-          <div>
+          <div className="paragraph-about-container">
             <p className="paragraph-about">
               While being the owner of an adorable poodle, passionately detailed
               photographer and your biggest cheerleader you will come to know, I
               have quite the eventful life. I currently work in the ER and tend
-              to patients in the hospital whilst I try and figure out my budget
+              to patients in the hospital while I try and figure out my budget
               to travel the world. However, my days are usually spent either
               adventuring out with my quirky family, pampering my toy poodle
               Berkley, or out editing photos with a glass of wine on the porch.
@@ -40,15 +40,18 @@ function About() {
               always practicing, learning, and aiming to improve my craft so I
               can deliver photos worthy of those incredible moments.
             </p>
-          </div>
-        </div>
-        <div className="about-photo"></div>
+            </div>
+            <div className="about-photo-mobile"></div>
+            </div>
+            <div className="about-photo"></div>
       </div>
-      <div className="about-banner">
-        <h4>
-          Your neighborhood travel-obsessed mog mom is always planning her next
+
+      
+      <div className="about-banner-red">
+        <p>
+          Your neighborhood travel-obsessed dog mom is always planning her next
           trip
-        </h4>
+        </p>
       </div>
 
       <div className="travel-section">
@@ -61,16 +64,16 @@ function About() {
           <div className="travel-photo-2"></div>
         </div>
         <div className="travel-item-container-3">
-          <h5>Powell</h5>
+          <h5>Flaming Gorge</h5>
           <div className="travel-photo-3"></div>
         </div>
       </div>
 
-      <div className="about-banner-2">
-        <h4>
+      <div className="about-banner-yellow">
+        <p>
           As your photographer, it is my promise to you that I will be by your
           side, ready to capture every moment of joy, excitement, and love.
-        </h4>
+        </p>
       </div>
 
       <div className="about-container-set1">
@@ -78,10 +81,10 @@ function About() {
         <div className="brides-image"></div>
       </div>
 
-      <div className="about-banner">
-        <h4>
+      <div className="about-banner-red">
+        <p>
             I am here to make you feel priceless.
-        </h4>
+        </p>
       </div>
 
       <div className="about-container-set2">
@@ -89,10 +92,10 @@ function About() {
         <div className="red-bride-set2"></div>
       </div>
 
-      <div className="about-banner-3">
-        <h4>
+      <div className="about-banner-yellow">
+        <p>
           Years from now, you will be able to look at these photos and be pulled right back into that moment which is a gift I am always so happy to offer. 
-        </h4>
+        </p>
       </div>
 
       <div className="about-container-set3">
@@ -103,10 +106,10 @@ function About() {
         <div className="wedding-couple-set3"></div>
       </div>
 
-      <div className="about-banner">
-        <h4>
+      <div className="about-banner-red">
+        <p>
         Beacause your big day matters to me as much as it matters to you. 
-        </h4>
+        </p>
       </div>
 
       <div className="about-container-set4">

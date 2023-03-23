@@ -104,7 +104,7 @@
       height: 85vh;
       position: absolute;
       left: 0;
-      top: -700%;
+      top: -900%;
       opacity: 1;
       transition: all 0.5s ease;
       z-index: -1;
@@ -112,7 +112,7 @@
   
     .nav-menu.active {
       background: #571017;
-      top: 100%;
+      top: 0%;
       opacity: 1;
       transition: all 0.5s ease;
       z-index: -1;
