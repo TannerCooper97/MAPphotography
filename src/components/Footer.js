@@ -6,7 +6,7 @@ import instagram from "../images/instagram2.svg";
 import facebook from "../images/facebook1.svg";
 import twitter from "../images/twitter1.svg";
 import mail from "../images/mail1.svg";
-import mapRed from "../images/MAphotographyRed.svg";
+
 
 function Footer() {
   return (
