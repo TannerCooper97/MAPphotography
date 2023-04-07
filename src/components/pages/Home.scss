@@ -23,15 +23,15 @@ video {
     display: flex; 
     justify-content: center;
     align-items: center; 
-    padding: 40px;
-    background-color: #ECD59A;
-    height: 100vh;
+    padding: 7rem;
+    background-color: #f4e1c5;
+    height: 110vh;
     width: 100%;
 }
 
 .greetings-content{
-    width: 60%;
-    height: 100%;
+    width: 50%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,8 +40,9 @@ video {
 
 .greetings-content h2 {
     text-align: center;
-    font-size: 2.50rem;
+    font-size: 2rem;
     padding: 5px;
+    
 }
 
 .subtitle-home {
@@ -60,14 +61,12 @@ video {
 }
 
 .greetings-photo{
-    width: 50%;
+    width: 40%;
     height: 90%;
     background-image: url("../../images/homeGreetPicture.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    padding-left: 100px;
-    padding-right: 100px;
     border-radius: 10px;
     box-shadow: 2px 5px 6px 2px rgb(68, 68, 68);
 }
@@ -76,34 +75,132 @@ video {
     display: flex;
     margin-top: 20px;
     justify-content: center;
+    align-items: center;
     text-decoration: none;
 }
 
-/* ///////////////////// */
-/* /////Banner CSS //////*/
-/* ///////////////////// */
+@media screen and (max-width: 1350px){
+    .greetings-section{
+        padding: 5rem;
+    }
+    .greetings-photo{
+        width: 40%;
+        height: 80%;
+    }
+    .greetings-content{
+        padding: 20px;
+        h2{
+            font-size: 30px;
+        }
+        .subtitle-home{
+            font-size: 22px;
+        }
+        .paragraph-home{
+            font-size: 18px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1050px){
+    .greetings-section{
+        padding: 3rem 5rem;
+        flex-direction: column;
+        height: 120vh;
+    }
+    .greetings-photo{
+        
+        width: 80%;
+        height: 50%;
+       
+    }
+    .greetings-content{
+        width: 90%;
+        height: 50%;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .greetings-section{
+        padding: 2rem 4rem;
+        height: 140vh;
+    }
+    .smol-btn{
+        padding: 15px 50px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .greetings-section{
+        padding: 1rem 3rem;
+        height: 150vh;
+    }
+    .greet-Btn{
+       padding-left: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    .greetings-section{
+       padding: 1rem;
+    }
+    
+    .greetings-content{
+       
+        h2{
+            font-size: 24px;
+        }
+    }
+    
+    
+    .subtitle-home {
+       font-size: 18px;
+    }
+    
+    .paragraph-home {
+       font-size: 16px;
+    }
+    
+    .greetings-photo{
+        height: 40%;
+    }
+    
+    .greet-Btn{
+       position: relative;
+    }
+}
+
+
+    /* ///////////////////// */
+    /* //// Banner CSS //////*/
+    /* ///////////////////// */
     .home-gallery-banner{
-        background: #72151F;
-        color: #ffff;
-        height: 15vh;
+        background: #CCA64F;
+        color: black;
+        height: 10vh;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 2rem;
-        font-weight: 500;
+        font-size: 1.75rem;
         text-shadow: 0px 4px 4px rgba(0,0,0, 0.25);
+        h4{
+            font-weight: 400;
+        }
     }
 
     .home-packages-banner{
         background: #CCA64F;
         color: rgb(0, 0, 0);
-        height: 15vh;
+        height: 10vh;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        font-size: 2rem;
-        font-weight: 500;
+        font-size: 1.5rem;
+        font-weight: 300;
         text-shadow: 1px 3px 4px rgba(0,0,0, 0.25);  
         .package-subheading{
             font-size: 1.5rem;
@@ -114,304 +211,397 @@ video {
     }
 
     /* ///////////////////// */
+    /* //// Wedding CSS /////*/
+    /* ///////////////////// */
+    
+    /* ///////////////////// */
     /* //// Packages CSS ////*/
     /* ///////////////////// */
+    .package-section{
+        background-color: #f0dab9;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        h2{
+            padding: 1rem 4rem;
+            font-size: 3rem;
+            font-weight: 400;
+        }
+    }
     .popular-packages-section{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        text-align: left;
+        justify-content: space-evenly;
         padding: 20px;
-        background-color: #f8f0e3;
+        background-color: #f4e1c5;
+        padding: 2rem 6rem 5rem 6rem;
+        gap: 3rem;
+       
     }
     .package-container{
-        background-color: #72151F;
+        background-color: #f8f0e3;
+        color: black;
         border-radius: 5px;
         width:33%;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-bottom: 2rem;
-       
-    }
-
-    .package-item{
-        background-color: #ECD59A;
-        display: flex;
-        height: 85%;
-        width: 90%;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 1rem;
-        padding-bottom: 3rem;
         border: 3px solid #CCA64F;
-        border-radius: 5px;
-        
-        h3{
-            margin-top: 20px;
-            font-size: 2rem;
-        }
-
+        height: 27rem;
         p{
-            margin-top: 5px;
+            margin-top: 1rem;
             font-size: 1.5rem; 
         }
 
         ul{
             margin-top: 30px; 
-            list-style-type: disc;
+            list-style-type: none;
             line-height: 1.5rem;
             font-size: 1.25rem;
             
         }
-    }
 
-/*///////////////// MEDIA QUERIES ///////////////////*/
-
-@media screen and (max-width: 1399px){
-    /* ///////////////////// */
-    /* Greetings Section CSS */
-    /* ///////////////////// */
-    .greetings-section{
-        display: flex;
-        flex-direction: column;
-        height: 200vh;
-    }
-
-    .greetings-content{
-        width: 100%;
-        height: 60%;
-        padding: 0;
-        margin-top: 30px;
-        order: 1;
-        .intro-btn{
-            text-align: center;
+        .service-btn1{
+            margin-top: 5rem;
         }
-    }
-    
-    .greetings-content h2 {
-        font-size: 2.50rem;
-        padding: 5px;
-
-    }
-    
-    .subtitle-home {
-        font-style: light;
-        font-size: 1.50rem;
-    }
-    
-    .paragraph-home {
-        text-align: justify;
-        font-size: 1.25rem;
-        font-style: medium;
-        padding: 20px;
+        .service-btn2{
+            margin-top: 3rem;
+        }
+        .service-btn3{
+            margin-top: 5.75rem;
+        }
+       
     }
 
-    .greetings-photo{
+    .package-item-header{
+        background-color: #e8d4a6;
+        display: flex;
         width: 100%;
-        height: 100%;
-        background-position: 80% 20%;
-        padding: 0;
-        order: 2;
-    }
-
-    /* ///////////////////// */
-    /* ///// Banner CSS /////*/
-    /* ///////////////////// */
-    .home-gallery-banner{
-        font-size: 1.75rem;
+        flex-direction: column;
+        align-items: center;
+       
+        border-radius: 5px 5px 0px 0px;
         padding: 1rem;
-        text-align: center;
-    }
-
-    .home-packages-banner{
-        font-size: 2rem;
-        .package-subheading{
-            display: none;
-        }
-    }
-
-    /* ///////////////////// */
-    /* //// Packages CSS ////*/
-    /* ///////////////////// */
-    .popular-packages-section{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-    }
-    .package-container{
-        background-color: #72151F;
-        width:90%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 4rem;
-        margin-bottom: 10px;
-        button{
-            font-size: 2.5rem;
-        }
-    }
-
-    .package-item{
-        background-color: #ECD59A;
-        width: 90%;
-        margin-top: 2rem;
-        margin-bottom: 3rem;
-        font-size: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
+        
         h3{
-            padding-top: 2rem;
-            padding-bottom: 3rem; 
-            font-size: 3rem; 
-        }
-
-        p{
-            padding-bottom: 2rem;
+            font-weight: 400;
+            margin-top: 10px;
             font-size: 2rem;
         }
+    }
 
-        ul{
-            padding-bottom: 5rem;
-            li{
-                line-height: 3rem;
-                font-size: 1.5rem;
-                text-align: justify;
+    @media screen and (max-width: 1350px){
+        .popular-packages-section{
+            padding: 2rem;
+            gap: 2rem;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1050px){
+        .popular-packages-section{
+            padding: 1rem;
+            gap: 1rem;
+        }
+    }
+    
+    @media screen and (max-width: 900px){
+        .popular-packages-section{
+            flex-direction: column;
+            padding: 3rem 8rem;
+            gap: 2rem;
+        }
+        .package-container{
+            width: 100%;
+        }
+    }
+    
+    @media screen and (max-width: 768px){
+        .popular-packages-section{
+            flex-direction: column;
+            padding: 3rem 4rem;
+            gap: 2rem;
+        }
+        .package-container{
+            width: 100%;
+        }
+        .service-btn1, .service-btn2, .service-btn3{
+            margin-left: -1.25rem;
+        }
+    }
+    
+    @media screen and (max-width: 600px){
+        .greetings-section{
+           padding: 1rem;
+        }
+        
+        .greetings-content{
+           
+            h2{
+                font-size: 24px;
             }
+        }
+        
+        
+        .subtitle-home {
+           font-size: 18px;
+        }
+        
+        .paragraph-home {
+           font-size: 16px;
+        }
+        
+        .greetings-photo{
+            height: 40%;
+        }
+        
+        .greet-Btn{
+           position: relative;
         }
     }
 
 
-}
+    // EXTRAS
 
-@media screen and (min-width: 1400px) and (max-width: 1599px){
-    /* ///////////////////// */
-    /* Greetings Section CSS */
-    /* ///////////////////// */
-    .greetings-content{
-        padding: 50px;
+      .about-container-set1 {
+    width: 100%;
+    height: 75vh;
+    padding: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f8f0e3;
+    .boquet-image {
+      width: 35%;
+      height: 100%;
+      margin-right: 1rem;
+      background-image: url("../../images/bouqet-home.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      border-radius: 10px;
+      box-shadow: 5px 6px 15px 2px rgba(68, 68, 68, 0.729);
+
     }
 
-    .subtitle-home {
+    .brides-image {
+      width: 75%;
+      height: 100%;
+      margin-left: 1rem;
+      background-image: url("../../images/drinking-brides-below.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      border-radius: 10px;
+      box-shadow: 5px 6px 15px 2px rgba(68, 68, 68, 0.729);
+      display: flex;
+      align-items: end;
+      justify-content: center;
+      p{
+        color: black;
         font-size: 1.25rem;
+        text-align: center;
+        padding: .5rem;
+        background-color: #CCA64F;
+        width: 100%;
+        border-radius: 0px 0px 10px 10px;
+        text-shadow: 0px 2px 2px rgba(0,0,0, 0.25);
+      }
+    }
+    @media screen and (max-width: 1100px){
+      .boquet-image{
+        display: none;
+      }
+      .brides-image{
+        width: 100%;
+        margin: 0;
+      }
     }
     
-    .paragraph-home {
-        font-size: 1rem;
+  }
+
+  @media screen and (max-width: 1100px){
+    .about-container-set1{
+      padding: 4rem;
+    }
+  }
+
+  .about-container-set2 {
+    width: 100%;
+    height: 100vh;
+    padding: 4rem 8rem;
+    padding-bottom: 6rem;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ecd59a;
+    .maternity-set2 {
+      width: 50%;
+      height: 100%;
+      margin-right: 3rem;
+      margin-top: 0rem;
+      background-image: url("../../images/maternity-about1.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 25%;
+      border-radius: 10px;
+     box-shadow: 5px 6px 15px 2px rgba(68, 68, 68, 0.729);
     }
 
+    .red-bride-set2 {
+      width: 50%;
+      height: 100%;
+      margin-left: 1rem;
+      margin-top: 3rem;
+      background-image: url("../../images/about-woman-set2.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      border-radius: 10px;
+     box-shadow: 5px 6px 15px 2px rgba(68, 68, 68, 0.729);
+    }
+  }
+  .about-container-set3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 6rem;
+    justify-content: center;
+    background-color: #f8f0e3;
+    .wedding-couple-set3 {
+      width: 50%;
+      height: 90%;
+      margin-left: 1.5rem;
+      margin-top: 2rem;
+      background-image: url("../../images/wedding-couple-set3-about.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 25%;
+      border-radius: 10px;
+     box-shadow: 5px 6px 15px 2px rgba(68, 68, 68, 0.729);
+     
+    }
+    @media screen and (max-width: 1100px){
+      .wedding-couple-set3{
+        width: 100%;
+        margin: 0;
+      }
+     }
+    .about-set3-container {
+      width: 50%;
+      height: 50%;
+      padding: 1rem 1rem;
+      .embrace-image {
+        width: 100%;
+        height: 100%;
+        background-image: url("../../images/man-set3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        border-radius: 10px;
+       box-shadow: 5px 6px 15px 2px rgba(68, 68, 68, 0.729);
+       display: flex;
+        align-items: end;
+        justify-content: center;
+       p{
+        color: black;
+        font-size: 1.25rem;
+        text-align: center;
+        padding: .5rem;
+        background-color: #CCA64F;
+        width: 100%;
+        border-radius: 0px 0px 10px 10px;
+        text-shadow: 0px 2px 2px rgba(0,0,0, 0.25);
+      }
+      }
 
-    /* ///////////////////// */
-    /* //// Packages CSS ////*/
-    /* ///////////////////// */
-        .package-item{
+      .child-set3 {
+        width: 100%;
+        height: 100%;
+        margin-top: 2rem;
+        background-image: url("../../images/about-child-set3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        border-radius: 10px;
+        box-shadow: 5px 6px 15px 2px rgba(68, 68, 68, 0.729);
+        
+        
+      }
+      
+     
+    }   
+  }
 
-        display: flex;
-        height: 85%;
-        width: 90%;
-        margin-top: 1rem;
-        padding-bottom: 3rem;
-        h3{
-            margin-top: 20px;  
-        }
+  @media screen and (max-width: 1100px){
+    .about-container-set3{
+      display: none;
+    }
+  }
 
-        p{
-            margin-top: 5px; 
-            font-size:1.25rem;
-        }
+ 
+  .about-container-set4{
+    width: 100%;
+    height: 75vh;
+    padding: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f8f0e3;
+    gap: 4rem;
+    .wedding-set4 {
+      width: 35%;
+      height: 100%;
+      background-image: url("../../images/destination-services.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      border-radius: 10px;
+      box-shadow: 5px 6px 15px 2px rgba(68, 68, 68, 0.729);
 
-        ul{
-            font-size: 1rem;
-            margin-top: 30px; 
-            line-height: 1.5rem;
-            
-        }
     }
 
+    .wedding-day-set4 {
+      width: 75%;
+      height: 100%;
+      margin-left: 1rem;
+      background-image: url("../../images/wedding-set4.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      border-radius: 10px;
+      box-shadow: 5px 6px 15px 2px rgba(68, 68, 68, 0.729);
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      p{
+        color: black;
+        font-size: 1.25rem;
+        text-align: center;
+        padding: .5rem;
+        background-color: #CCA64F;
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+        text-shadow: 0px 2px 2px rgba(0,0,0, 0.25);
+      }
+    }
+    @media screen and (max-width: 1100px){
+      .wedding-set4{
+        display: none;
+      }
+      .wedding-day-set4{
+        width: 100%;
+        margin: 0;
+      }
+    }
+    
 }
 
-@media screen and (min-width: 1600px){
-    /* ///////////////////// */
-    /* Greetings Section CSS */
-    /* ///////////////////// */
-
-    .greetings-section{
-        padding-left: 5rem;
-        padding-right: 5rem;
-    }
-    .greetings-content{
-        padding: 50px;
-    }
-    
-    .greetings-content h2 {
-        font-size: 3.5rem;
-        padding: 5px;
-    }
-
-    .subtitle-home {
-        font-size: 2rem;
-    }
-    
-    .paragraph-home {
-        font-size: 1.50rem;
-        padding: 40px;
-    }
-
-    /* ///////////////////// */
-    /* /////Banner CSS //////*/
-    /* ///////////////////// */
-    .home-gallery-banner{
-        font-size: 2rem;
-    }
-
-    .home-packages-banner{
-        font-size: 2rem;
-        .package-subheading{
-            font-size: 1.5rem;
-        }
-    }
-
-
-    .package-container{
-        width:33%;
-        display: flex;
-        padding-bottom: .75rem;
-    }
-    
-
-    
-
-    .package-item{
-
-        width: 90%;
-        height: 85%;
-        margin-top: 1rem;
-        font-size: 1.5rem;
-        align-items: center;
-
-        h3{
-            padding-top: 2rem;
-            padding-bottom: 1rem; 
-            font-size: 2.5rem; 
-        }
-
-        p{
-            font-size: 1.5rem;
-        }
-
-        ul{
-            li{
-                line-height: 3rem;
-                font-size: 1.25rem;
-                text-align: justify;
-            }
-        }
-    }
-
-    
-  
+@media screen and (max-width: 1100px){
+  .about-container-set4{
+    padding: 4rem;
+    margin: 0;
+  }
 }
+
+

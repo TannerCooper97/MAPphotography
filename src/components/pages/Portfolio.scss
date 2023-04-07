@@ -33,6 +33,8 @@
     // }
 }
 
+
+
 .weddingSection{
     background-color: #f8f0e3;
 }
@@ -43,4 +45,13 @@
 
 .maternitySection{
     background-color: #f8f0e3;
+}
+
+.booknow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4e1c5;
+    padding: 2rem;
 }

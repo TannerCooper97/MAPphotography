@@ -1,5 +1,5 @@
 .navbar {
-    background: #571017;
+    background: rgb(5, 5, 5);
     height: 100px;
     display: flex;
     justify-content: center;
@@ -28,7 +28,14 @@
     font-size: 1.25rem;
     display: flex;
     align-items: center;
-    width: 50%;
+    font-weight: 200;
+    img{
+      width: 100%;
+      padding-right: 1rem;
+      max-width: 30%;
+      min-width: 30%;
+      
+    }
   }
   
   .nav-menu {
@@ -47,7 +54,7 @@
   }
   
   .nav-links {
-    color: #ffff;
+    color: #CCA64F;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -56,13 +63,13 @@
   }
   
   .nav-links:hover {
-    border-bottom: 4px solid #CCA64F;
-    color: #CCA64F;
+    padding-bottom: 1rem;
+    color: white;
     transition: all 0.2s ease-out;
   }
   
   .fa-bars {
-    color: #fff;
+    color: #CCA64F;
   }
   
   .nav-links-mobile {
@@ -73,14 +80,10 @@
     display: none;
   }
 
-  img {
-    max-width: 30%;
-    min-width: 30%;
-  }
-
-  @media screen and (min-width: 1400px){
+ 
+  @media screen and (max-width: 1400px){
     .navbar{
-      height: 125px;
+      height: 100px;
     }
 
     .nav-item {
@@ -94,14 +97,14 @@
     }
     
     .navbar{
-        height: 110px;
+        height: 100px;
     }
     .nav-menu {
-      background: #571017;
+      background: rgb(5, 5, 5);
       display: flex;
       flex-direction: column;
       width: 100%;
-      height: 85vh;
+      height: 100vh;
       position: absolute;
       left: 0;
       top: -900%;
@@ -111,7 +114,7 @@
     }
   
     .nav-menu.active {
-      background: #571017;
+      background: rgb(5, 5, 5);
       top: 0%;
       opacity: 1;
       transition: all 0.5s ease;
@@ -124,7 +127,7 @@
       padding: 2rem;
       width: 100%;
       display: table;
-      margin-top: -55px;
+      margin-top: -15px;
     }
   
     .nav-links:hover {
@@ -140,6 +143,10 @@
       transform: translate(10%, 0%);
       font-size: 1.5rem;
       flex-direction: row;
+      img{
+        width: 80%;
+        height: 10rem;
+      }
     }
   
     .menu-icon {
@@ -184,10 +191,20 @@
     .navbar-logo {
       font-size: 1.25rem;
     }
+  }
 
-    img {
-      max-width: 20%;
-      min-width: 20%;
+  @media screen and (max-width: 600px){
+    .nav-bar{
+      height: 110px;
     }
-
+    .navbar-logo {
+      justify-content: center;
+      h4{
+        display: none;
+      }
+      img {
+        max-width: 60%;
+        min-width: 60%;
+      }
+    }
   }

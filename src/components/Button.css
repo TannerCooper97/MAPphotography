@@ -4,7 +4,7 @@
 
 .btn {
     padding: 8px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     outline: none;
     border: none;
     cursor:pointer;
@@ -17,10 +17,10 @@
 }
 
 .btn--outline {
-    background-color: transparent;
+    background-color: #242424;
     color: #ffff;
     padding: 8px 20px;
-    border: 2px solid var(--primary);
+    border: 3px solid #242424;
     transition: all 0.3 ease-out;
 }
 
@@ -28,7 +28,7 @@
     background-color: transparent;
     color: #000000;
     padding: 8px 20px;
-    border: 2px solid #242424;
+    border: 3px solid #242424;
     transition: all 0.3 ease-out;
 }
 
@@ -45,15 +45,16 @@
 
 .btn--outline:hover {
   transition: all 0.3s ease-out;
-  background: #fff;
+  background: #fcf8f1;
   color: #000000;
+  border: 3px solid #242424;
   transition: 300ms;
 }
 
 .btn--outline-black:hover {
     transition: all 0.3s ease-out;
     background: #242424;
-    border: 2px solid #242424;
+    border: 3px solid #242424;
     color: #ffff;
     transition: 300ms;
   }

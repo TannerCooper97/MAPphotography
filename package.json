@@ -12,6 +12,7 @@
     "bootstrap": "^3.4.1",
     "lightbox.js-react": "^0.4.6",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
     "react-responsive-masonry": "^2.1.7",
     "react-router-dom": "^6.4.5",

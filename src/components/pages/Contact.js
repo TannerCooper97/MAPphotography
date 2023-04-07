@@ -12,18 +12,10 @@ function Contact() {
         <h1>Contact</h1>
       </div>
 
-      <div className="questions-banner">
-        <h3>Looking to work together? Or have more questions?</h3>
-        <p>
-          If you have any questions concerns or just want to get a quote you are
-          welcome to send me a message and can get back to you within 24 to 48
-          buisness hours. I can’t wait to make your dreams come true!
-        </p>
-      </div>
 
       <div className="postcard">
         <div className="postcard-container">
-          <p className="postcard-title">Post Card</p>
+          <p className="postcard-title">Contact</p>
           <form action="" className="postcard-form">
 
             <div className="postcard-text-area">
@@ -76,7 +68,11 @@ function Contact() {
                 <option value="other">Other</option>
                 
                 </select>
-                <Link to="/" className="btn-mobile greet-Btn">
+                
+            </div>
+           
+          </form>
+          <Link to="/" className="btn-mobile btn-contact ">
               <Button
                 className="btns"
                 buttonStyle="btn--outline-black"
@@ -84,9 +80,7 @@ function Contact() {
               >
                 Send
               </Button>
-            </Link>
-            </div>
-          </form>
+              </Link>
         </div>
       </div>
       <Footer/>
